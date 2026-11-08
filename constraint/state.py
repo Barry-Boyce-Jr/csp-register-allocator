@@ -95,20 +95,6 @@ def no_conflict(csp, assignment, variable, value):
     #every neighbor was checked and none had the register
     return True
 
-# Function Name: copy_domains
-# Description:   copies every domain
-# Parameters:    domains - dict of each virtual register and the physical
-#                          registers it can still use
-# Return Value:  new dict with a new set for each virtual register
-def copy_domains(domains):
-    copy = {}
-    for variable in domains:
-        #copies each register into a new set 
-        registers = set()
-        for register in domains[variable]:
-            registers.add(register)
-        copy[variable] = registers
-    return copy
 
 # Function Name: budget_filter
 # Description:   cuts the physical registers down in order to test with register budgets
