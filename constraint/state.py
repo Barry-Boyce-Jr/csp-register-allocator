@@ -94,3 +94,39 @@ def no_conflict(csp, assignment, variable, value):
             return False
     #every neighbor was checked and none had the register
     return True
+
+# Function Name: copy_domains
+# Description:   copies every domain
+# Parameters:    domains - dict of each virtual register and the physical
+#                          registers it can still use
+# Return Value:  new dict with a new set for each virtual register
+def copy_domains(domains):
+    copy = {}
+    for variable in domains:
+        #copies each register into a new set 
+        registers = set()
+        for register in domains[variable]:
+            registers.add(register)
+        copy[variable] = registers
+    return copy
+
+# Function Name: budget_filter
+# Description:   cuts the physical registers down in order to test with register budgets
+# Parameters:    csp - csp dict
+#                budget - number of registers
+# Return Value:  the csp with the smaller registers and domains
+def budget_filter(csp, budget):
+    #registers are already sorted R0, R1, R2, ... so the first K are the budget
+    budget_registers = []
+    for register in csp[PHYSICAL_REGISTERS]:
+        if len(budget_registers) < budget:
+            budget_registers.append(register)
+    csp[PHYSICAL_REGISTERS] = budget_registers
+    #each virtual register only keeps the registers that are in the budget
+    for variable in csp[VARIABLES]:
+        allowed = set()
+        for register in csp[DOMAINS][variable]:
+            if register in budget_registers:
+                allowed.add(register)
+        csp[DOMAINS][variable] = allowed
+    return csp

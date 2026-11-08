@@ -30,7 +30,7 @@ def make_arcs(csp):
 #                neighbor - virtual register it interferes with
 #                metrics - metrics dict
 # Return Value:  true if a register was deleted from the variable, otherwise false
-def revise_arc(domains, variable, neighbor, metrics):
+def revise_arc(domains, variable, neighbor, metrics, removed_list):
     #adds one to the ac-3 revision count
     metrics[AC3_REVISIONS] = metrics[AC3_REVISIONS] + 1
     removed = False
@@ -42,6 +42,10 @@ def revise_arc(domains, variable, neighbor, metrics):
         if domains[neighbor] == {value}:
             domains[variable].discard(value)
             removed = True
+            #saves what was removed so it can be put back if this is a dead end
+            if removed_list is not None:
+                removed_list.append((variable, value))
+
     return removed
 
 # Function Name: ac3
@@ -53,7 +57,7 @@ def revise_arc(domains, variable, neighbor, metrics):
 #                metrics - metrics dict that also counts revisions
 #                arcs - arcs to start the queue with
 # Return Value:  false if a virtual register has no registers left
-def ac3(csp, domains, metrics, arcs=None):
+def ac3(csp, domains, metrics, arcs=None, removed_list=None):
     #if no arcs were given, starts with every arc in the csp
     if arcs is None:
         arcs = make_arcs(csp)
@@ -69,7 +73,7 @@ def ac3(csp, domains, metrics, arcs=None):
         in_queue.discard((variable, neighbor))
 
         #only does more work if the check removed a register
-        if revise_arc(domains, variable, neighbor, metrics):
+        if revise_arc(domains, variable, neighbor, metrics, removed_list):
             if not domains[variable]:
                 return False
             #if a variable loses a value, its neighbors need to be rechecked
