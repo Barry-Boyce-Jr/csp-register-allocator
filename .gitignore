@@ -1,2 +1,4 @@
 __pycache__/
 *.bundle
+last_output.txt
+last_result.csv
