@@ -1,0 +1,417 @@
+PHYSICAL_REGISTERS R0 R1 R2 R3 R4 R5 R6 R7
+VIRTUAL_REGISTERS
+v0 R0 R1 R2 R3 R4 R5 R6 R7
+v1 R1 R5
+v2 R0 R1 R2 R3 R4 R5 R6 R7
+v3 R0 R1 R2 R3 R4 R5 R6 R7
+v4 R0 R1 R2 R3 R4 R5 R6 R7
+v5 R0 R1 R2 R3 R4 R5 R6 R7
+v6 R0 R1 R2 R3 R4 R5 R6 R7
+v7 R0 R1 R2 R3 R4 R5 R6 R7
+v8 R0 R1 R2 R3 R4 R5 R6 R7
+v9 R0 R1 R2 R3 R4 R5 R6 R7
+v10 R0 R1 R2 R3 R4 R5 R6 R7
+v11 R0 R1 R2 R3 R4 R5 R6 R7
+v12 R0 R1 R2 R3 R4 R5 R6 R7
+v13 R0 R1 R2 R5 R6 R7
+v14 R0 R1 R2 R3 R4 R5 R6 R7
+v15 R0 R1 R2 R3 R4 R5 R6 R7
+v16 R0 R1 R2 R3 R4 R5 R6 R7
+v17 R0 R1 R2 R4 R6 R7
+v18 R0 R1 R2 R3 R4 R5 R6 R7
+v19 R0 R1 R2 R3 R4 R5 R6 R7
+v20 R0 R1 R2 R3 R4 R5 R6 R7
+v21 R0 R1 R2 R3 R4 R5 R6 R7
+v22 R0 R1 R2 R3 R4 R5 R6 R7
+v23 R0 R1 R2 R3 R4 R5 R6 R7
+v24 R0 R1 R2 R3 R4 R5 R6 R7
+v25 R0 R1 R2 R3 R5 R7
+v26 R0 R1 R2 R3 R4 R5 R6 R7
+v27 R0 R1 R2 R3 R4 R5 R6 R7
+v28 R0 R1 R2 R3 R4 R5 R6 R7
+v29 R1 R4 R6
+v30 R0 R1 R2 R3 R4 R5 R6 R7
+v31 R0 R1 R2 R3 R4 R5 R6 R7
+v32 R0 R1 R2 R3 R4 R5 R6 R7
+v33 R0 R1 R2 R3 R4 R5 R6 R7
+v34 R0 R1 R2 R3 R4 R5 R6 R7
+v35 R0 R1 R2 R3 R4 R5 R6 R7
+v36 R0 R1 R2 R3 R4 R5 R6 R7
+v37 R0 R1 R2 R3 R4 R5 R6 R7
+v38 R0 R1 R2 R3 R4 R5 R6 R7
+v39 R0 R1 R2 R3 R4 R5 R6 R7
+v40 R0 R1 R2 R3 R4 R5 R6 R7
+v41 R0 R1 R2 R3 R4 R5 R6 R7
+v42 R0 R3 R4 R7
+v43 R0 R1 R2 R3 R4 R5 R6 R7
+v44 R0 R1 R2 R3 R4 R5 R6 R7
+v45 R0 R1 R2 R3 R4 R5 R6 R7
+v46 R0 R1 R2 R3 R4 R5 R6 R7
+v47 R0 R1 R2 R3 R4 R5 R6 R7
+v48 R0 R1 R2 R3 R4 R5 R6 R7
+v49 R0 R1 R2 R3 R4 R5 R6 R7
+INTERFERENCES
+v0 v2
+v0 v9
+v0 v15
+v0 v17
+v0 v18
+v0 v19
+v0 v25
+v0 v29
+v0 v31
+v0 v33
+v0 v36
+v0 v39
+v0 v40
+v1 v4
+v1 v5
+v1 v7
+v1 v9
+v1 v17
+v1 v24
+v1 v29
+v1 v32
+v1 v34
+v1 v35
+v1 v43
+v1 v44
+v1 v47
+v2 v8
+v2 v14
+v2 v20
+v2 v21
+v2 v30
+v2 v34
+v2 v43
+v2 v46
+v2 v48
+v3 v5
+v3 v7
+v3 v20
+v3 v25
+v3 v28
+v3 v30
+v3 v31
+v3 v34
+v3 v35
+v3 v38
+v3 v39
+v3 v41
+v3 v43
+v3 v44
+v3 v48
+v4 v5
+v4 v7
+v4 v8
+v4 v13
+v4 v14
+v4 v21
+v4 v22
+v4 v23
+v4 v28
+v4 v30
+v4 v32
+v4 v36
+v4 v41
+v4 v42
+v4 v44
+v4 v47
+v4 v48
+v5 v6
+v5 v9
+v5 v10
+v5 v14
+v5 v18
+v5 v20
+v5 v33
+v5 v34
+v5 v35
+v5 v36
+v5 v39
+v5 v42
+v5 v43
+v5 v44
+v5 v45
+v5 v46
+v5 v48
+v5 v49
+v6 v14
+v6 v17
+v6 v20
+v6 v28
+v6 v30
+v6 v31
+v6 v35
+v6 v39
+v6 v40
+v6 v42
+v6 v46
+v7 v13
+v7 v15
+v7 v21
+v7 v22
+v7 v23
+v7 v28
+v7 v31
+v7 v39
+v7 v40
+v7 v42
+v7 v45
+v8 v11
+v8 v13
+v8 v17
+v8 v18
+v8 v22
+v8 v24
+v8 v25
+v8 v27
+v8 v31
+v8 v36
+v8 v38
+v8 v43
+v9 v11
+v9 v18
+v9 v19
+v9 v23
+v9 v24
+v9 v26
+v9 v27
+v9 v29
+v9 v31
+v9 v37
+v9 v42
+v9 v46
+v9 v47
+v10 v14
+v10 v16
+v10 v17
+v10 v18
+v10 v22
+v10 v24
+v10 v25
+v10 v30
+v10 v33
+v10 v35
+v10 v38
+v10 v40
+v10 v47
+v11 v16
+v11 v20
+v11 v26
+v11 v31
+v11 v35
+v11 v36
+v11 v37
+v11 v38
+v11 v41
+v11 v42
+v11 v47
+v11 v48
+v12 v15
+v12 v22
+v12 v28
+v12 v36
+v12 v39
+v12 v43
+v13 v14
+v13 v17
+v13 v19
+v13 v20
+v13 v26
+v13 v31
+v13 v38
+v13 v42
+v13 v44
+v13 v45
+v13 v47
+v13 v49
+v14 v17
+v14 v22
+v14 v23
+v14 v25
+v14 v26
+v14 v30
+v14 v31
+v14 v33
+v14 v37
+v14 v39
+v14 v46
+v14 v47
+v14 v48
+v15 v22
+v15 v27
+v15 v29
+v15 v32
+v15 v34
+v15 v39
+v15 v40
+v15 v49
+v16 v18
+v16 v21
+v16 v26
+v16 v27
+v16 v32
+v16 v34
+v16 v35
+v16 v39
+v16 v41
+v16 v42
+v16 v49
+v17 v25
+v17 v29
+v17 v30
+v17 v32
+v17 v34
+v17 v40
+v17 v44
+v17 v49
+v18 v20
+v18 v29
+v18 v39
+v18 v41
+v19 v21
+v19 v28
+v19 v29
+v19 v33
+v19 v34
+v19 v42
+v19 v43
+v20 v23
+v20 v27
+v20 v28
+v20 v31
+v20 v33
+v20 v36
+v20 v42
+v20 v44
+v20 v45
+v20 v46
+v20 v48
+v20 v49
+v21 v23
+v21 v24
+v21 v25
+v21 v26
+v21 v29
+v21 v31
+v21 v32
+v21 v36
+v21 v40
+v21 v42
+v21 v44
+v21 v45
+v21 v47
+v22 v23
+v22 v26
+v22 v27
+v22 v31
+v22 v33
+v22 v38
+v22 v41
+v22 v47
+v22 v49
+v23 v31
+v23 v38
+v23 v43
+v23 v47
+v24 v30
+v24 v35
+v24 v38
+v24 v42
+v25 v26
+v25 v27
+v25 v31
+v25 v38
+v25 v42
+v25 v43
+v25 v44
+v25 v45
+v26 v30
+v26 v32
+v26 v36
+v26 v37
+v26 v41
+v26 v45
+v26 v49
+v27 v29
+v27 v36
+v27 v37
+v27 v38
+v27 v39
+v27 v40
+v27 v41
+v27 v43
+v27 v44
+v27 v45
+v27 v47
+v27 v48
+v28 v30
+v28 v32
+v28 v36
+v28 v38
+v28 v40
+v28 v42
+v28 v43
+v28 v45
+v28 v46
+v28 v47
+v29 v38
+v29 v39
+v29 v41
+v29 v43
+v29 v44
+v29 v46
+v29 v48
+v30 v33
+v30 v34
+v30 v38
+v30 v39
+v30 v40
+v30 v41
+v30 v44
+v30 v45
+v30 v49
+v31 v36
+v31 v38
+v31 v39
+v31 v40
+v31 v42
+v31 v46
+v31 v48
+v31 v49
+v32 v37
+v32 v41
+v32 v43
+v32 v45
+v32 v48
+v33 v34
+v33 v48
+v34 v35
+v34 v39
+v34 v44
+v34 v47
+v35 v36
+v35 v41
+v35 v45
+v36 v37
+v36 v38
+v36 v42
+v36 v44
+v36 v47
+v37 v39
+v38 v42
+v38 v43
+v38 v45
+v38 v46
+v39 v42
+v40 v49
+v41 v42
+v41 v43
+v42 v49
+v43 v49
+v44 v46
+v44 v47
+v45 v46
+v46 v48
+v48 v49
